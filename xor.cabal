@@ -1,0 +1,30 @@
+name:                  xor
+version:               0.0.1
+license:               Free
+license-file:          LICENSE
+author:                Deepak Kapiswe <deepakkapiswe@gmail.com>
+maintainer:            Deepak Kapiswe <deepakkapiswe@gmail.com> 
+copyright:             Deepak Kapiwe
+synopsis:              xor neural network
+category:              System
+cabal-version:         >= 1.8
+build-type:            Simple
+description:           teaching a neural network to produce xor boolean operations
+
+source-repository head
+  type: git
+  location: https://gitlab.com/deepakkapiswe/ml-problem.git
+
+library
+
+executable             xor
+    ghc-options:       -threaded -O2
+    main-is:           app/Main.hs
+    build-depends:     base
+                     , grenade
+                     , mtl                             >= 2.2.1      && < 2.3
+                     , hmatrix
+                     , transformers
+                     , singletons
+                     , MonadRandom
+                     , QuickCheck

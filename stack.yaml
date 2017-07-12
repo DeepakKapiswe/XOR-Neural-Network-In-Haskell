@@ -1,0 +1,7 @@
+extra-deps:
+- grenade-0.1.0
+resolver: lts-8.21
+flags: {}
+extra-package-dbs: []
+packages:
+- '.'
